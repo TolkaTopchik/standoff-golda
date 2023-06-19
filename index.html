@@ -51,23 +51,11 @@
   <input type="password" id="password" name="password" required><br><br>
 
   <input type="submit" value="Зарегистрироваться">
-
-<script>
-  function redirectToOtherSite() {
-    localStorage.setItem("redirect", "true");
-    window.location.href = "/Реистрация.html";
-  }
-  
-  if (localStorage.getItem("redirect") === "true") {
-    localStorage.removeItem("redirect");
-    window.location.href = "/Реистрация.html";
-  }
-</script>
-<form data-netlify="true">
-</form>
   <br>
+</form>
   <footer>
 Есть небольшой шанс проверки игрового аккаунта службой безопасности игры и его блокировки в случае обнаружения подозрительной активности. В таком случае, сайт не несет ответственности, так как предупреждает об этом.
   </footer>
+  <script src="/main.js"></script>
 </body>
 </html>
