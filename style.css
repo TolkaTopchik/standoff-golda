@@ -72,100 +72,9 @@ body {
   top: 150px;
   width: 800px;
 }
-/* header img {
-  border-radius: 10%;
-}
-
-h2 {
-  margin-top: 40px;
-  text-align: center;
-  padding: 10px;  
-}
-
-  .Tolka {
-  color: #fff;
-}
-
-h2 {
-  color: #fff;
-}
-
-p {
-  color: #fff;
-  margin: 20px;
-  text-align: center;
-}
-
-.BEBE {
-  color: darkgreen;
-}
-
-main {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.ad-container {
-  margin-top: 20px;
-}
-
-.ad-container img {
-  width: 300px;
-  height: 250px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
-}
-
-label {
-  font-weight: bold;
-}
-
-/* input[type="text"],
-input[type="email"],
-input[type="password"] {
-  margin-bottom: 10px;
-  padding: 5px;
-  width: 200px;
-  border-color: black;
-}
-
-input[type="submit"] {
-  background-color: #fff;
-  border: none;
-  color: red;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin-top: 10px;
-  cursor: pointer;
-} */
-/* button { background-color: black;
-  border: none;
-  color: red;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin-top: 10px;
-  cursor: pointer;
-}
-
-footer {
-  background-image: url("/ph60468.jpg");
-} */ 
 
 nav {
-  position: fixed;
+  position: absolute;
   left: 120px;
   top: 0;
 }
@@ -239,6 +148,16 @@ button {
     left: 28%; 
   }
 
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.7)), url(/1687352999257.png);
+    width: 480px;
+    height: 400px;
+  }
+
+  .hero-box {
+    padding-top: 118px;
+  }
+
   .hero-heading {
     width: 360px;
     color: #FFF;
@@ -252,13 +171,15 @@ button {
   }
 
   .hero-pers {
-    width: 630px;
-    left: 86px;
-    top: 249px;
+    width: 198px;
+    left: 283px;
+    z-index: 1;
+    top: 158px;
   }
 
   .hero-btn {
     color: #FFF;
+    z-index: 2;
     text-align: center;
     font-size: 16px;
     font-weight: 700;
