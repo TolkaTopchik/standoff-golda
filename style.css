@@ -73,6 +73,13 @@ body {
   width: 800px;
 }
 
+.hero-pers-two {
+  position: absolute;
+  left: 770px;
+  top: 150px;
+  width: 800px;
+}
+
 nav {
   position: absolute;
   left: 120px;
@@ -140,23 +147,39 @@ button {
   transition: opacity 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
+  .hero-pers-two {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
   .modal {
     position: fixed;
     z-index: 999;
-    top: 40%;
-    left: 28%; 
+    top: 246px;
+    left: 193px;
   }
 
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.7)), url(/1687352999257.png);
-    width: 480px;
+    max-width: 767px;
     height: 400px;
   }
+
+    .hero-pers-two {
+      width: 160px;
+      left: 233px;
+      z-index: 1;
+      top: 163px;
+}
+    }
 
   .hero-box {
     padding-top: 118px;
   }
+
 
   .hero-heading {
     width: 360px;
@@ -171,10 +194,7 @@ button {
   }
 
   .hero-pers {
-    width: 198px;
-    left: 283px;
-    z-index: 1;
-    top: 158px;
+    display: none;
   }
 
   .hero-btn {
@@ -188,14 +208,27 @@ button {
     border-radius: 4px;
     background-color: #ff5722;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  }    
+
+
+
+@media screen and (max-width: 392px) {
+  .hero {
+    max-width: 393px;
   }
 
+  .hero-pers-two {
+    width: 149px;
+    left: 211px;
+    z-index: 1;
+    top: 180px;
+  }
 
+  .hero-pers {
+    display: none;
+  }
 }
 
-.no-scroll {
-  overflow: hidden;
-}
 
 .modal-content {
   margin-top: 10px;
