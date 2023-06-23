@@ -36,3 +36,32 @@ registrationForm.addEventListener('submit', function(event) {
     }, 2200);
   }, 1000);
 });
+
+// Отримати всі елементи з анімаціями
+var animationElements = document.querySelectorAll('.info-text-box');
+
+function isElementInViewport(element) {
+  var rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+// Функція, яка запускає анімацію для видимих елементів
+function handleScroll() {
+  for (var i = 0; i < animationElements.length; i++) {
+    var element = animationElements[i];
+    if (isElementInViewport(element)) {
+      element.classList.add('animate'); // Додати клас, який запускає анімацію
+    }
+  }
+}
+
+// Викликати функцію handleScroll при прокрутці сторінки
+window.addEventListener('scroll', handleScroll);
+
+// Викликати функцію handleScroll одразу, щоб показати анімації, які вже в полі зору
+handleScroll();

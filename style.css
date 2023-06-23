@@ -20,10 +20,22 @@ body {
   box-sizing: border-box;
 }
 
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-glav {
+  max-width: 1600px;
+}
+
 .hero {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.7)), url(/1687352846597.png);
   max-width: 1600px;
-  height: 600px;
+  height: 600px; 
 }
 
 .hero-box {
@@ -158,21 +170,12 @@ button {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease-in-out;
-  animation: scaleIn 1s ease-in-out;
 }
 
-.modal-two {
-  position: fixed;
-  top: 100px;
-  left: 190px;
-  transform: translate(-50%, -50%);
-  background: linear-gradient(0deg, rgb(69, 77, 101), rgb(69, 77, 101)), rgb(86, 93, 113);
-  padding: 30px;
-  border-radius: 5px;
-  z-index: 999;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease-in-out;
+@media screen and (min-width: 1440px) {
+  .hero-pers {
+    left: 980px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -201,6 +204,7 @@ button {
       left: 233px;
       z-index: 1;
       top: 163px;
+      animation: slideInLeft 1s ease-in-out;
     }
 
     .hero-box {
@@ -290,7 +294,6 @@ button {
 
 .modal.show .modal-content {
   animation: fadeInModal 0.3s;
-  animation: scaleIn 1s ease-in-out;
 }
 
 @keyframes scaleIn {
@@ -341,7 +344,6 @@ button {
   font-size: 14px;
   box-sizing: border-box;
   padding: 10px;
-  animation: slideInLeft 1s ease-in-out;
 }
 
 @keyframes slideInLeft {
@@ -353,6 +355,87 @@ button {
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+/*---------------------------------------------INFO-SECTION----------------------------------*/
+
+.info {
+  padding-top: 94px;
+  height: 600px;
+}
+
+.info-list {
+  display: flex;
+  justify-content: center;
+}
+
+.info-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.info-list-heading {
+  margin-top: 10px;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+
+.info-list-text {
+  margin-bottom: 10px;
+  color: #FFF;
+  width: 270px;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+}
+
+.info-text-box {
+  border: 1px solid #ff5722;
+  padding: 10px;
+  box-shadow: 4px 4px 34px #ff5722,
+      -4px -4px 34px #ff5722;
+  border-radius: 19px;
+}
+
+.animate {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@media screen and (max-width: 767px) {
+   .info {
+    padding-top: 72px;
+   }
+
+  .info-list {
+     flex-direction: column;
+  }
+  
+
+  .info-list-heading {
+    max-width: 270px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    }
+
+    .info-list-text {
+      max-width: 450px;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.42px;
+    }
+
+    .info-text-box {
+      margin-bottom: 50px;
+    }
+
+  .section-glav {
+    max-width: 767px;
   }
 }
 
