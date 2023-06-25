@@ -38,30 +38,19 @@ registrationForm.addEventListener('submit', function(event) {
 });
 
 // Отримати всі елементи з анімаціями
-var animationElements = document.querySelectorAll('.info-text-box');
-
-function isElementInViewport(element) {
-  var rect = element.getBoundingClientRect();
-  return (
-    rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-  );
-}
-
-// Функція, яка запускає анімацію для видимих елементів
-function handleScroll() {
-  for (var i = 0; i < animationElements.length; i++) {
-    var element = animationElements[i];
-    if (isElementInViewport(element)) {
-      element.classList.add('animate'); // Додати клас, який запускає анімацію
+function onEntry(entry) {
+  entry.forEach(change => {
+    if (change.isIntersecting) {
+     change.target.classList.add('element-show');
     }
-  }
+  });
 }
 
-// Викликати функцію handleScroll при прокрутці сторінки
-window.addEventListener('scroll', handleScroll);
+let options = {
+  threshold: [0.5] };
+let observer = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll('.element-animation');
 
-// Викликати функцію handleScroll одразу, щоб показати анімації, які вже в полі зору
-handleScroll();
+for (let elm of elements) {
+  observer.observe(elm);
+}
