@@ -426,7 +426,7 @@ button {
 
 .element-animation.element-show {
   opacity: 1;
-  transition: all 1.5s;
+  transition: all 1s;
   transform: translateY(0%);
 }
 
