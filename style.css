@@ -194,7 +194,7 @@ button {
     position: fixed;
     z-index: 999;
     top: 320px;
-    left: 193px;
+    left: 0 auto;
   }
 
   .hero {
@@ -330,6 +330,7 @@ button {
 
 @media screen and (max-width: 768px) {
   .modal-content {
+    max-width: 330px;
     width: 275px;
     height: 350px;
   }
@@ -418,6 +419,17 @@ button {
   animation: fadeIn 1s ease-in-out;
 }
 
+.element-animation {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.element-animation.element-show {
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateY(0%);
+}
+
 @media screen and (max-width: 767px) {
    .info {
     padding-top: 30px;
@@ -467,5 +479,8 @@ button {
     }
 }
 
+.fadeIn {
+  opacity: 1;
+}
 
 
