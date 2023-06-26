@@ -240,7 +240,44 @@ button {
 }
 
 .btn-registr {
+  margin-top: 2px;
+  border-radius: 4px;
   text-align: center;
+  font-weight: 400;
+}
+
+.btn-box {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-content {
+  margin-top: 10px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 2px;
+    right: 15px;
+    color: #ffffff;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.form-input {
+  margin: 0 auto;
+  width: 285px;
+  margin-bottom: 14px;
+  background-color: rgb(52, 55, 76);
+  border: 0;
+  display: inline-flex;
+  color: rgba(0, 0, 0, 0.87);
+  cursor: text;
+  display: inline-flex;
+  position: relative;
+  font-size: 14px;
+  box-sizing: border-box;
+  padding: 18px;
 }
 
 @media screen and (min-width: 1440px) {
@@ -331,18 +368,6 @@ button {
 }
 
 
-.modal-content {
-  margin-top: 10px;
-}
-
-.close-btn {
-    position: absolute;
-    top: 2px;
-    right: 15px;
-    color: #ffffff;
-    font-size: 32px;
-    cursor: pointer;
-}
 
 .overlay {
   position: fixed;
@@ -376,24 +401,8 @@ button {
   .modal-content {
     max-width: 330px;
     width: 285px;
-    height: 350px;
+    height: 315px;
   }
-}
-
-.form-input {
-  margin: 0 auto;
-  width: 285px;
-  margin-bottom: 14px;
-  background-color: rgb(52, 55, 76);
-  border: 0;
-  display: inline-flex;
-  color: rgba(0, 0, 0, 0.87);
-  cursor: text;
-  display: inline-flex;
-  position: relative;
-  font-size: 14px;
-  box-sizing: border-box;
-  padding: 18px;
 }
 
 /*-----------------INFO-SECTION-------------------------------*/
