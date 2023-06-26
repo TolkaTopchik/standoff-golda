@@ -293,7 +293,7 @@ button {
 
 }
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 425px) {
   .modal {
     position: fixed;
     z-index: 999;
@@ -306,14 +306,6 @@ button {
     max-width: 767px;
     height: 400px;
   }
-
-    .hero-pers-two {
-      width: 160px;
-      left: 233px;
-      z-index: 1;
-      top: 163px;
-      animation: slideInLeft 1s ease-in-out;
-    }
 
     .hero-box {
       padding-top: 118px;
@@ -329,10 +321,6 @@ button {
       line-height: 42px;
       letter-spacing: 1.56px;
       text-transform: uppercase;
-    }
-    
-    .hero-pers {
-      display: none;
     }
 
     .hero-btn {
@@ -350,23 +338,97 @@ button {
 }
 
 
-@media screen and (max-width: 392px) {
+@media screen and (max-width: 393px) {
+
+  .hero-pers-two {
+    width: 153px;
+    left: 236px;
+    z-index: 1;
+    top: 174px;
+    animation: slideInLeft 1s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 387px) {
+
+  .hero-pers-two {
+    width: 153px;
+    left: 232px;
+    z-index: 1;
+    top: 174px;
+    animation: slideInLeft 1s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 381px) {
+
+  .hero-pers-two {
+    width: 153px;
+    left: 226px;
+    z-index: 1;
+    top: 174px;
+    animation: slideInLeft 1s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 365px) {
+
+  .hero-pers-two {
+    width: 151px;
+    left: 214px;
+    z-index: 1;
+    top: 180px;
+    animation: slideInLeft 1s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 369px) {
+  
+  .hero-pers-two {
+    width: 153px;
+    left: 218px;
+    z-index: 1;
+    top: 174px;
+    animation: slideInLeft 1s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 375px) {
+
+  .hero-pers-two {
+    width: 153px;
+    left: 220px;
+    z-index: 1;
+    top: 174px;
+    animation: slideInLeft 1s ease-in-out;
+  }
+}
+
+
+@media screen and (max-width: 360px) {
   .hero {
-    max-width: 393px;
+    max-width: 360px;
+  }
+  
+  .info-list-item {
+    width: 297px !important;
   }
 
   .hero-pers-two {
     width: 149px;
-    left: 211px;
+    left: 210px;
     z-index: 1;
     top: 180px;
+    animation: slideInLeft 1s ease-in-out;
   }
-
-  .hero-pers {
-    display: none;
-  }
+  
 }
 
+@media screen and (min-width: 394px) and (max-width: 425px)  {
+
+  .hero-pers-two {
+  
+}
 
 
 .overlay {
@@ -490,7 +552,7 @@ button {
 
     .info-text-box {
       margin-top: 30px;
-      margin-bottom: 50px;
+      margin-bottom: 43px;
     }
 
   .section-glav {
@@ -509,6 +571,16 @@ button {
       margin-right: 0;
       margin: 0 auto;
     }
+}
+
+@media screen and (max-width: 356px) {
+  .hero-pers-two {
+    display: none;
+  }
+
+  .info-list-item {
+    width: 300px;
+  }
 }
 
 
