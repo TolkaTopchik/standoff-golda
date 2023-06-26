@@ -497,6 +497,10 @@ button {
     max-width: 767px;
   }
 
+  .info-list-item {
+      width: 332px;
+    }
+
   .info-list-item:last-child {
     display: none;
   }
