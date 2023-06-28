@@ -574,6 +574,13 @@ button {
   animation: slideInDown 1s ease-in-out;
 }
 
+@media screen and (min-width: 390px) {
+  .hero-pers {
+    display: none;
+  }
+
+}
+
 
 @media screen and (max-width: 768px) {
   .info {
