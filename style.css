@@ -312,7 +312,7 @@ button {
 
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
   .modal {
     position: fixed;
     z-index: 999;
@@ -472,7 +472,7 @@ button {
 
 }
 
-@media screen and (min-width: 394px) and (max-width: 425px) {
+@media screen and (min-width: 394px) and (max-width: 768px) {
 
   .hero-pers-two {
     display: none;
