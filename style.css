@@ -357,11 +357,11 @@ button {
 }
 
 
-@media screen and (max-width: 393px) {
+@media screen and (max-width: 394px) {
 
   .hero-pers-two {
     width: 153px !important;
-    left: 236px !important;
+    left: 238px !important;
     z-index: 1;
     top: 174px !important;
     animation: slideInLeft 1s ease-in-out;
@@ -472,7 +472,7 @@ button {
 
 }
 
-@media screen and (min-width: 394px) and (max-width: 768px) {
+@media screen and (min-width: 395px) and (max-width: 768px) {
 
   .hero-pers-two {
     display: none !important;
