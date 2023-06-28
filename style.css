@@ -145,9 +145,9 @@ h1 {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #FFFFFF;
+  z-index: 2;
   animation: slideInDown 1s ease-in-out;
 }
-
 
 .hero-btn {
   font-style: normal;
@@ -231,6 +231,24 @@ button {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease-in-out;
+}
+
+.modal-succefel {
+  width: 200px;
+}
+
+.sec-text {
+  width: 200px;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.sec-heading {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 2px;
 }
 
 .registr-heading {
@@ -347,6 +365,10 @@ button {
     top: 174px;
     animation: slideInLeft 1s ease-in-out;
   }
+
+    .hero-pers {
+      display: none;
+    }
 }
 
 @media screen and (max-width: 387px) {
@@ -358,6 +380,10 @@ button {
     top: 174px;
     animation: slideInLeft 1s ease-in-out;
   }
+
+    .hero-pers {
+      display: none;
+    }
 }
 
 @media screen and (max-width: 381px) {
@@ -369,6 +395,10 @@ button {
     top: 174px;
     animation: slideInLeft 1s ease-in-out;
   }
+
+    .hero-pers {
+      display: none;
+    }
 }
 
 @media screen and (max-width: 365px) {
@@ -380,6 +410,11 @@ button {
     top: 180px;
     animation: slideInLeft 1s ease-in-out;
   }
+
+    .hero-pers {
+      display: none;
+    }
+
 }
 
 @media screen and (max-width: 369px) {
@@ -391,6 +426,10 @@ button {
     top: 174px;
     animation: slideInLeft 1s ease-in-out;
   }
+
+   .hero-pers {
+      display: none;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -402,12 +441,20 @@ button {
     top: 174px;
     animation: slideInLeft 1s ease-in-out;
   }
+
+  .hero-pers {
+    display: none;
+  }
 }
 
 
 @media screen and (max-width: 360px) {
   .hero {
     max-width: 360px;
+  }
+
+  .hero-pers {
+    display: none;
   }
   
   .info-list-item {
@@ -427,7 +474,14 @@ button {
 @media screen and (min-width: 394px) and (max-width: 425px)  {
 
   .hero-pers-two {
-  
+   display: none;
+  }
+
+  .hero-pers {
+    width: 181px;
+    left: 214px;
+    top: 180px;
+  }
 }
 
 
@@ -506,7 +560,7 @@ button {
   border: 1px solid #ff5722;
   padding: 10px;
   box-shadow: 4px 4px 34px #ff5722,
-      -4px -4px 34px #ff5722;
+    -4px -4px 34px #ff5722;
   border-radius: 19px;
 }
 
@@ -575,6 +629,10 @@ button {
 
 @media screen and (max-width: 356px) {
   .hero-pers-two {
+    display: none;
+  }
+
+  .hero-pers {
     display: none;
   }
 
