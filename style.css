@@ -360,60 +360,60 @@ button {
 @media screen and (max-width: 393px) {
 
   .hero-pers-two {
-    width: 153px;
-    left: 236px;
+    width: 153px !important;
+    left: 236px !important;
     z-index: 1;
-    top: 174px;
+    top: 174px !important;
     animation: slideInLeft 1s ease-in-out;
   }
 
   .hero-pers {
-    display: none;
+    display: none !important;
   }
 }
 
 @media screen and (max-width: 387px) {
 
   .hero-pers-two {
-    width: 153px;
-    left: 232px;
+    width: 153px !important;
+    left: 232px !important;
     z-index: 1;
-    top: 174px;
+    top: 174px !important;
     animation: slideInLeft 1s ease-in-out;
   }
 
   .hero-pers {
-    display: none;
+    display: none !important;
   }
 }
 
 @media screen and (max-width: 381px) {
 
   .hero-pers-two {
-    width: 153px;
-    left: 226px;
+    width: 153px !important;
+    left: 226px !important;
     z-index: 1;
-    top: 174px;
+    top: 174px !important;
     animation: slideInLeft 1s ease-in-out;
   }
 
   .hero-pers {
-    display: none;
+    display: none !important;
   }
 }
 
 @media screen and (max-width: 365px) {
 
   .hero-pers-two {
-    width: 151px;
-    left: 214px;
+    width: 151px !important;
+    left: 214px !important;
     z-index: 1;
-    top: 180px;
+    top: 180px !important;
     animation: slideInLeft 1s ease-in-out;
   }
 
   .hero-pers {
-    display: none;
+    display: none !important;
   }
 
 }
@@ -421,30 +421,30 @@ button {
 @media screen and (max-width: 369px) {
 
   .hero-pers-two {
-    width: 153px;
-    left: 218px;
+    width: 153px !important;
+    left: 218px !important;
     z-index: 1;
-    top: 174px;
+    top: 174px !important;
     animation: slideInLeft 1s ease-in-out;
   }
 
   .hero-pers {
-    display: none;
+    display: none !important;
   }
 }
 
 @media screen and (max-width: 375px) {
 
   .hero-pers-two {
-    width: 153px;
-    left: 220px;
+    width: 153px !important;
+    left: 220px !important;
     z-index: 1;
-    top: 174px;
+    top: 174px !important;
     animation: slideInLeft 1s ease-in-out;
   }
 
   .hero-pers {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -463,10 +463,10 @@ button {
   }
 
   .hero-pers-two {
-    width: 149px;
-    left: 210px;
+    width: 149px !important;
+    left: 210px !important;
     z-index: 1;
-    top: 180px;
+    top: 180px !important;
     animation: slideInLeft 1s ease-in-out;
   }
 
@@ -475,13 +475,13 @@ button {
 @media screen and (min-width: 394px) and (max-width: 768px) {
 
   .hero-pers-two {
-    display: none;
+    display: none !important;
   }
 
   .hero-pers {
-    width: 181px;
-    left: 214px;
-    top: 180px;
+    width: 181px !important;
+    left: 214px !important;
+    top: 180px !important;
   }
 }
 
@@ -630,15 +630,15 @@ button {
 
 @media screen and (max-width: 356px) {
   .hero-pers-two {
-    display: none;
+    display: none !important;
   }
 
   .hero-pers {
-    display: none;
+    display: none !important;
   }
 
   .info-list-item {
-    width: 300px;
+    width: 300px !important;
   }
 }
 
