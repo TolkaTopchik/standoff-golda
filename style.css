@@ -289,6 +289,7 @@ button {
   margin-bottom: 14px;
   background-color: rgb(52, 55, 76);
   border: 0;
+  border-radius: 5px;
   display: inline-flex;
   color: rgba(0, 0, 0, 0.87);
   cursor: text;
@@ -571,11 +572,17 @@ button {
   animation: slideInDown 1s ease-in-out;
 }
 
+@media screen and (min-width: 1024px) {
+  .info-heading {
+    display: none;
+  }
+}
+
+
 @media screen and (max-width: 394px) {
   .hero-pers {
     display: none;
   }
-
 }
 
 
@@ -650,5 +657,29 @@ button {
   margin-top: 0;
   color: var(--main-text-color);
   font-weight: 400;
+  margin-bottom: 25px;
+  font-size: 27px;
   text-align: center;
+  /* margin: 0 auto; */
+}
+
+.info {
+  height: 1040px;
+}
+
+.about-text {
+  width: 290px;
+  color: var(--main-text-color);
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10px;
+   border: 1px solid #ff5722;
+  /* padding: 10px; */
+  padding: 10px 3px;
+  box-shadow: 3px 3px 18px #ff5722,
+    -5px -5px 18px #ff5722;
+  border-radius: 41px;
+  margin-bottom: 30px;
 }
