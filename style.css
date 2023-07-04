@@ -683,3 +683,7 @@ button {
   border-radius: 41px;
   margin-bottom: 30px;
 }
+
+.form-input {
+  color: #fff;
+}
